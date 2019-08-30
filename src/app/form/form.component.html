@@ -5,8 +5,8 @@
       <div class="form-group">
 
           <label for="name">Name</label>
-          <input type="text" required class="form-control" id="name">
-          <button type="submit" class="btn-btn-danger"routerLink="/about" routerLinkActive='active'>Submit</button>
+          <input #accessing type="text" required class="form-control" id="name">
+          <button type="submit" class="btn-btn-danger"routerLink="/about" routerLinkActive='active'(click)="fun(accessing.value)">Submit</button>
 
       </div>
      

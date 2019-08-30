@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { User } from '../user';
+import { Repo } from '../repo';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -7,8 +10,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./form.component.css']
 })
 export class FormComponent implements OnInit {
-
-  constructor() { }
+  
+  try:string;
+  
+  fun(tryer){
+    this.router.navigate(['/about',tryer])
+  }
+  constructor(private router:Router) { }
 
   ngOnInit() {
   }
