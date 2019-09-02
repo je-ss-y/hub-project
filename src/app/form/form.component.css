@@ -1,0 +1,15 @@
+body{
+    background-image:url("http://www.bestfunforall.com/better/imgs/8%20lightbulb%20wallpaper%20%203.jpg");
+    height:100vh;
+    color:white;
+    font-size:40px;
+    text-align:center;
+}
+#form{
+    border:2px solid white;
+    margin:auto;
+    width:50%;
+    position:relative;
+    bottom:-250px;
+    background-color:rgba(0,0,0,0.521);
+}
