@@ -25,3 +25,32 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+# Jessica Nkubito
+#### Class project, 05-8-2019
+## Description
+This is a class project intended to help us create a platform that interacts with the user using javascript;Angular and bootstrap.
+## Setup/Installation Requirements
+* It is simple to use
+* Input your username
+* click on submit button to search
+* the details shall be displayed on the redirected page
+## BDD
+#### inputs
+* Username
+#### output
+* user: username, id 
+*  repository: name ,description, repo
+## Technologies Used
+html
+Angular
+css
+javascript
+jquery
+bootstrap
+css
+## Support and contact details
+jessica Nkubito
+github account:je-ss-y
+### License
+*this product is strictly for non commercial use
+Copyright (c) 2019 
