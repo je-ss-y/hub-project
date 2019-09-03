@@ -1,3 +1,17 @@
 <div class="jumbotron">
-<p>{{userr.name}}</p>
+<p>
+    Client's username:{{userr.name}}
+   
+    Client's id{{userr.id}}
+</p>
+<img src=" {{userr.avatar}}">
+</div>
+<div>
+    <p *ngFor='let abc of repovar'>
+        {{abc.name}}
+        {{abc.description}}
+        {{abc.language}}
+
+    </p>
+
 </div>

@@ -1,5 +1,5 @@
 export class Repo {
-    constructor(public name:string,public email:string,public follow:string,public repo:string){
+    constructor(public name:string,public description:string,public language:string){
         
     }
 }

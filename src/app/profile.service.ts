@@ -12,7 +12,7 @@ import { resolve, reject } from 'q';
 export class ProfileService {
 
 user:User;
-repo:any;
+repo:Repo [];
   constructor(private http:HttpClient) {
     this.user= new User("","",0)
    }
@@ -36,17 +36,25 @@ repo:any;
     })
     return promise
    }
-   reporequest(){
-     this.http.get("https://api.github.com./users" + this.user+"/repo? apiUrl"+this.repo);
+   repoRequest(ok){
+    interface ApiResponse{
+     name:string;
+     description:string;
+     language:string;
+   
    }
-//    reporequest(){
-//     interface ApiResponse{
-//               Name:string;
-//               email:string;
-//               follow:string;
-//               repo:string;
- 
-//     }
-
-//  }
+   let promise =new Promise((resolve,reject)=>{
+     this.http.get<ApiResponse>('https://api.github.com/users/'+ ok+'/repos?access_token=' +environment.apiUrl).toPromise().then(response=>{
+     for (var i in response){
+       this.repo.push(new Repo(response[i].name,response[i].description,response[i].language))
+     }
+       resolve()
+     },
+     error=>{
+     
+     reject(Error)
+     })
+   })
+   return promise
+  }
 }
