@@ -40,6 +40,8 @@ This is a class project intended to help us create a platform that interacts wit
 #### output
 * user: username, id 
 *  repository: name ,description, repo
+#### Know bugs
+* repository outputs fail to displaying
 ## Technologies Used
 html
 Angular
