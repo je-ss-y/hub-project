@@ -58,6 +58,7 @@ export class ProfileService {
         for (var i in response) {
           this.repos.push(response[i]);
           console.log(this.repos);
+         
           
 
         }
