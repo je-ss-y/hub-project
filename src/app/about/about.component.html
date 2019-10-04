@@ -1,20 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> </title>
+</head>
 
 <body>
-    <div class="jumbotron">
-<p>
-    Client's username:{{userr.name}}<br>
-   
-    Client's id{{userr.id}}<br>
-</p>
-<img src=" {{userr.avatar}}">
-</div>
-<div>
-    <p *ngFor='let abc of repovar'>
-        {{abc.name}}<br>
-        {{abc.description}}<br>
-        {{abc.language}}<br>
+    <div>
+        <!-- <div class="container">
+            <div class="row">
+                <div class="card">
+                    <div class="card-body text-center col-md-6"
+                        style="box-shadow: 2px 4px 12px 2px rgb(148, 147, 147); margin: 1rem; padding: 0; border-radius: 10px; margin-left: 300px; margin-bottom: 20px; background-image: url('https://i.pinimg.com/originals/50/85/16/5085160094547b9bd560a072ca250953.jpg');"> -->
+                        <p appStrikethrough>{{acc.name}}<br></p>
+                        {{acc.login}}<br>
+                        <img src="{{acc.avatar_url}}"><br>
 
-    </p>
+                        {{acc.html_url}}<br>
+                        {{acc.followers}}<br>
+                        {{acc.following}}<br>
+                        {{acc.completeDate|date}}<br>
+<!-- 
+                    </div>
+                </div>
+            </div>
+        </div> -->
 
-</div>
+        <div>
+            {{repos.name}}
+            {{repos.language}}
+            {{repos.description}}
+        </div>
+
 </body>
+
+</html>

@@ -6,6 +6,7 @@ import {FormComponent} from './form/form.component'
 const routes: Routes = [
   { path: 'about', component: AboutComponent},
   { path: 'about/:try', component: AboutComponent},
+  {path:'repository:repos',component:AboutComponent},
   { path: '', component: FormComponent}
 ];
 

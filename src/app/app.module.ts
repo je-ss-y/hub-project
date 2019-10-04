@@ -10,6 +10,8 @@ import { FormComponent } from './form/form.component';
 import { HubComponent } from './hub/hub.component';
 import { AboutComponent } from './about/about.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { StrikethroughDirective } from './strikethrough.directive';
+import { DateCountPipe } from './date-count.pipe';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { NavbarComponent } from './navbar/navbar.component';
     FormComponent,
     HubComponent,
     AboutComponent,
-    NavbarComponent
+    NavbarComponent,
+    StrikethroughDirective,
+    DateCountPipe
   ],
   imports: [
     BrowserModule,
