@@ -12,14 +12,14 @@
                 <div class="card">
                     <div class="card-body text-center col-md-12"
                         style="box-shadow: 2px 4px 12px 2px rgb(148, 147, 147);  padding: 0; border-radius: 2px;  margin-bottom: 20px; background-color:plum;">
-                        <p appStrikethrough>{{acc.name}}<br></p>
-                        {{acc.login}}<br>
+                        <p appStrikethrough>Name:{{acc.name}}<br></p>
+                        <p>login name:{{acc.login}}</p><br>
                         <img src="{{acc.avatar_url}}"><br>
 
-                        {{acc.html_url}}<br>
-                        {{acc.followers}}<br>
-                        {{acc.following}}<br>
-                        {{acc.completeDate|date}}<br>
+                       
+                        <p>followers: {{acc.followers}}</p><br>
+                        <p>following:{{acc.following}}</p><br>
+                        <p>Date:{{acc.completeDate|date}}</p><br>
 
                     </div>
 
